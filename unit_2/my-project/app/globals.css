@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f6f8;
+}
+
+/* Main Page */
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+
+.header {
+  height: 90px;
+  width: 100%;
+
+  background-color: white;
+
+  border-bottom: 1px solid #ddd;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding-right: 60px;
+}
+
+/* PSU Logo */
+
+.psu-logo {
+  width: 100px;
+  height: 60px;
+
+  object-fit: contain;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  height: 60px;
+  width: 100%;
+
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar a {
+  text-decoration: none;
+
+  color: #222;
+
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #2563eb;
+}
+
+/* Main Content */
+
+.main-content {
+  flex: 1;
+
+  padding: 60px;
+}
+
+/* Hero Section */
+
+.hero {
+  max-width: 900px;
+
+  margin: auto;
+
+  background-color: white;
+
+  padding: 60px;
+
+  border-radius: 12px;
+
+  text-align: center;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.hero h1 {
+  font-size: 42px;
+
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+
+  line-height: 1.6;
+
+  color: #555;
+
+  margin-bottom: 30px;
+}
+
+/* Button */
+
+.hero button {
+  padding: 12px 28px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background-color: #2563eb;
+
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Footer */
+
+.footer {
+  height: 80px;
+
+  background-color: #222;
+
+  color: white;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 14px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .header {
+    height: 80px;
+
+    padding-right: 20px;
+  }
+
+  .psu-logo {
+    width: 80px;
+    height: 50px;
+  }
+
+  .navbar {
+    height: auto;
+
+    padding: 15px;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+  }
+
+  .main-content {
+    padding: 25px 15px;
+  }
+
+  .hero {
+    padding: 35px 20px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
