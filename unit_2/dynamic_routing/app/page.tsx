@@ -92,16 +92,25 @@
 
 
 
-import Link from "next/link";
+// import Link from "next/link";
+
+// export default function Home() {
+//   return (
+//     <div>
+//       <h1>Home Page</h1>
+
+//       <Link href="/isr">
+//         Go to Products Page
+//       </Link>
+//     </div>
+//   );
+// }
+
+
+
+
+import CssModulePage from "./css_module/page";
 
 export default function Home() {
-  return (
-    <div>
-      <h1>Home Page</h1>
-
-      <Link href="/isr">
-        Go to Products Page
-      </Link>
-    </div>
-  );
+  return <CssModulePage />;
 }
